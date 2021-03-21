@@ -75,14 +75,4 @@ textarea{
   color: #000000;
 }
 
-textarea .past {
-  background-color: #d3d3d3;
-}
 
-textarea .present {
-  background-color: #ff6961;
-}
-
-textarea .future {
-  background-color: #77dd77;
-}

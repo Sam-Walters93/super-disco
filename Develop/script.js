@@ -1,3 +1,5 @@
+
+//clears local storage at midnight
 if (moment().format('HH:MM:ss') === '23:59:59') {
     window.localStorage.clear();
 }
@@ -6,17 +8,19 @@ if (moment().format('HH:MM:ss') === '23:59:59') {
 var currentDate = moment().format("dddd, MMMM Do YYYY");
 $('#currentDay').text(currentDate);
 
+//runs time checker every hour
 if (moment().minutes() === 00) {
     console.log('hour check');
     checkTime();
 }
 
+//loads tasks and sets colors
 window.onload = function() {
     loadTasks();
     checkTime();
 }
 
-//check if divs are in past and change class
+//check if divs are in past and change class to adjust colo
 function checkTime() {
     var currentHour = moment().hour();
     var hourArr = $('.hour');
@@ -37,6 +41,7 @@ function checkTime() {
     }
 };
 
+//a click on the task area will allow editin
 $('.container').on('click', function() {
     if (event.target.matches('.col-8')) {
         var text = event.target.innerText;
@@ -52,13 +57,14 @@ $('.container').on('click', function() {
     }
 });
 
-
+//if the task area is directed away from task will save 
 $('.container').on('blur', 'textarea', function() {
     var taskDiv = '<div class="col-8 d-flex align-items-center">' + $('textarea').val().trim() + '</div>';
     $('textarea').replaceWith(taskDiv);
     checkTime();
 });
 
+//saves task and time to localstorage
 $('.saveBtn').on('click', function(event) {
 
     var id = $(this).siblings('.hour')[0].id;
@@ -77,6 +83,7 @@ $('.saveBtn').on('click', function(event) {
     checkTime();
 });
 
+//loads tasks
 function loadTasks() {
     let tasks = JSON.parse(localStorage.getItem("yourTasks"));
 
