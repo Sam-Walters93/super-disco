@@ -6,4 +6,4 @@ https://sam-walters93.github.io/workify/
 
 A simple calendar app for scheduling your work day
 
-Built with JS, JQuery, Moment JS, CSS, HTML
+*Built with JS, JQuery, Moment JS, CSS, HTML*
