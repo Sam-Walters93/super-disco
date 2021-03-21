@@ -1,7 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
+  color: #000000;
 }
 
 textarea{
@@ -49,12 +50,12 @@ textarea{
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn {
@@ -68,4 +69,20 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.saveBtn :active {
+  color: #000000;
+}
+
+textarea .past {
+  background-color: #d3d3d3;
+}
+
+textarea .present {
+  background-color: #ff6961;
+}
+
+textarea .future {
+  background-color: #77dd77;
 }

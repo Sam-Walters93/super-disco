@@ -22,7 +22,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body onLoad="checkTime()">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -30,9 +30,58 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="09">9AM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="10">10AM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="11">11AM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="12">12PM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="13">1PM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="14">2PM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="15">3PM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="16">4PM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2 hour d-flex justify-content-end align-items-center" id="17">5PM</div>
+        <div class="col-8 d-flex align-items-center"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center saveBtn"><i class="far fa-save"></i></div>
+      </div>
     </div>
+    
+    
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
